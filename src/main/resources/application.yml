@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:jandatabase
+    username: jan
+    password: jan
+    driverClassName: org.h2.Driver
+
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    defer-datasource-initialization: true
+  h2:
+    console:
+      enabled: true
+
+charge-calculation:
+  free-period-hour-start: 7
+  free-period-minute-start: 0
+  free-period-hour-end: 12
+  free-period-minute-end: 0
